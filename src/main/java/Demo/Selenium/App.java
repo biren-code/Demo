@@ -27,11 +27,13 @@ public class App
 //    	ObjectOutputStream oos=new ObjectOutputStream(fos);
 //    	oos.writeObject(d1);
 //    	System.out.println("Serialization ended");
-    	System.out.println("Deserialization started");
+//    	System.out.println("Deserialization started");
     	FileInputStream fis=new FileInputStream("C://Users//biredas//Desktop//AAE//obj.ser.txt");
     	ObjectInputStream ois=new ObjectInputStream(fis);
     	Dog d2=(Dog)ois.readObject();
     	System.out.println("Deserialization ended");
     	System.out.println(d2.i+"................"+d2.j);
+    	System.out.println("Hi");
+    	//
     }
 }
